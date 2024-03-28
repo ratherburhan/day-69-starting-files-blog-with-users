@@ -83,12 +83,14 @@
               >
             </li>
             {% endif %}
+
+            {% if is_logged: %}
             <li class="nav-item">
               <a
                 class="nav-link px-lg-3 py-3 py-lg-4"
                 href="{{ url_for('logout') }}"
-                >Log Out</a
-              >
+                >Log Out</a>
+              {% endif %}
             </li>
             <li class="nav-item">
               <a
